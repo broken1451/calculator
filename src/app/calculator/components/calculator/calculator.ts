@@ -15,7 +15,7 @@ import { CalculatorService } from '@/calculator/services/calculator.service';
     // }
   `,
    host: {
-    '(document:keyup)': 'handleKeydown($event)'
+    '(document:keyup)': 'handleKeydown($event)' // esta linea es para que el host escuche los eventos de teclado y los pase al metodo handleKeydown a nivel glogal 
    }
 })
 export class Calculator {
