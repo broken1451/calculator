@@ -1,0 +1,49 @@
+<div class="w-screen h-40 bg-gradient-to-b from-gray-800 to-gray-700 flex items-end text-right"
+    style="max-width: 300px;">
+    <div class="w-full py-5 px-6 text-6xl text-white font-thin">
+
+        @if (subResultText() !== '0') {
+            <span class="text-4xl">{{subResultText()}} {{lastOperator()}}</span>
+            <br>
+        }
+        <span>{{resultText()}}</span>
+
+    </div>
+</div>
+
+<div class="w-full bg-gradient-to-b from-indigo-400 to-indigo-500">
+    <div class="flex w-full">
+        <!-- content projection -->
+        <app-calculator-button (onclick)="handleClcik($event)"> C </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)"> +/- </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)"> % </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)" isComand> ÷ </app-calculator-button>
+
+    </div>
+    <div class="flex w-full">
+
+        <app-calculator-button (onclick)="handleClcik($event)"> 7 </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)"> 8 </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)"> 9 </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)" isComand> x </app-calculator-button>
+    </div>
+    <div class="flex w-full">
+        <app-calculator-button (onclick)="handleClcik($event)"> 4 </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)"> 5 </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)"> 6 </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)" isComand> - </app-calculator-button>
+
+    </div>
+    <div class="flex w-full">
+        <app-calculator-button (onclick)="handleClcik($event)"> 1 </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)"> 2 </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)"> 3 </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)" isComand> + </app-calculator-button>
+
+    </div>
+    <div class="flex w-full">
+        <app-calculator-button (onclick)="handleClcik($event)"> 0 </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)"> . </app-calculator-button>
+        <app-calculator-button (onclick)="handleClcik($event)" isComand isEqual=""> = </app-calculator-button>
+    </div>
+</div>

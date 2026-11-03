@@ -8,5 +8,15 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('zonelessCalculator');
+   readonly title = signal('zonelessCalculator');
+   public readonly title2 = signal('zonelessCalculator2');
+  //  protected readonly title = signal('zonelessCalculator');
+
+  method1(){
+    console.log('method1');
+  }
+
+ private method2(){
+
+  }
 }

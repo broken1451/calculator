@@ -1,0 +1,9 @@
+<!-- <div class=""> -->
+    <button 
+            [class.is-command]="isComand()" 
+            [class.is-pressed]="isPressed()" 
+            (click)="click()" 
+            #button class="w-full h-16 outline-none focus:outline-none hover:bg-indigo-700 hover:bg-opacity-20 text-white text-opacity-50 text-xl font-light" >
+        <ng-content></ng-content>
+    </button>
+<!-- </div> -->
